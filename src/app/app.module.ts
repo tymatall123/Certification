@@ -14,10 +14,12 @@ import { PageContactComponent } from './page-contact/page-contact.component';
 import { PageServiceComponent } from './page-service/page-service.component';
 import { PageRegimeComponent } from './page-regime/page-regime.component';
 import { HearderFooterComponent } from './hearder-footer/hearder-footer.component';
-import { PageacceuilComponent } from './Admin-general/pageacceuil/pageacceuil.component';
+import { PageacceuilComponent } from './Admin-general/AcceuilAdminG/pageacceuil.component';
 import { CategorieComponent } from './Admin-general/categorie/categorie.component';
 import { GestionCoachsComponent } from './Admin-general/gestion-coachs/gestion-coachs.component';
 import { GestionCommantaireComponent } from './Admin-general/gestion-commantaire/gestion-commantaire.component';
+import { FooterComponent } from './footer/footer.component';
+import { DetailVideoComponent } from './detail-video/detail-video.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { GestionCommantaireComponent } from './Admin-general/gestion-commantaire
     PageacceuilComponent,
     CategorieComponent,
     GestionCoachsComponent,
-    GestionCommantaireComponent
+    GestionCommantaireComponent,
+    FooterComponent,
+    DetailVideoComponent
   ],
   imports: [
     BrowserModule,

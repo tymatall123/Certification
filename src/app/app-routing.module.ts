@@ -11,6 +11,10 @@ import { GestionRegimeComponent } from './admin/gestion-regime/gestion-regime.co
 import { GestionUserComponent } from './admin/gestion-user/gestion-user.component';
 import { GestionVideoComponent } from './admin/gestion-video/gestion-video.component';
 import { HearderFooterComponent } from './hearder-footer/hearder-footer.component';
+import { FooterComponent } from './footer/footer.component';
+import { CategorieComponent } from './Admin-general/categorie/categorie.component';
+import { GestionCoachsComponent } from './Admin-general/gestion-coachs/gestion-coachs.component';
+import { GestionCommantaireComponent } from './Admin-general/gestion-commantaire/gestion-commantaire.component';
 
 const routes: Routes = [
   // utilisateur
@@ -26,6 +30,13 @@ const routes: Routes = [
   { path: 'gestion-user', component:GestionUserComponent },
   { path: 'gestion-video', component:GestionVideoComponent },
   { path: 'herader-footer', component:HearderFooterComponent },
+  { path: 'footer', component:FooterComponent },
+  { path: 'categorie', component:CategorieComponent },
+  { path: 'coach', component:GestionCoachsComponent },
+  { path: 'page-acceuil', component:PageAcceuilComponent },
+
+
+
   
 ];
 
