@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-authentification',
-  templateUrl: './authentification.component.html',
-  styleUrls: ['./authentification.component.css']
+  selector: 'app-scripte',
+  templateUrl: './scripte.component.html',
+  styleUrls: ['./scripte.component.css']
 })
-export class AuthentificationComponent {
+export class ScripteComponent {
   nom: string="" ;
   prenom: string ="";
   role: string ="";
@@ -23,16 +23,15 @@ export class AuthentificationComponent {
   
   
   inscription(){
-  if (this.nom=='' || this.prenom=='' || this.nom=='' || this.email=='' || this.password==''  || this.password=='')  {
+  if (this.nom=='' || this.prenom=='' || this.nom=='' || this.email=='' || this.password=='' )  {
     this.showMessage("error", "Oops","Veuillez renseigner tous les champs");
    
   }
-else {
-const   user={
+  else {
+  const   user={
     prenon:this.prenom,
     nom:this.nom,
     email:this.email,
-    role:this.role,
     password:this.password,
 
     
@@ -83,14 +82,16 @@ connexion(){
             this.showMessage('error','Oops', 'Ce compte n/existe pas veuiller vous inscrire ')
           }
           }
-        // this.route.navigate(['/accueil'])
       },
       (error:any) => {
-        // gérez les erreurs des connexion.
         console.error('Erreur de connexion :', error);
       }
     );
   }
 }
+
+
+
+  
 
 }

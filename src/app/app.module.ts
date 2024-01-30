@@ -23,7 +23,12 @@ import { GestionCoachsComponent } from './Admin-general/gestion-coachs/gestion-c
 import { GestionCommantaireComponent } from './Admin-general/gestion-commantaire/gestion-commantaire.component';
 import { FooterComponent } from './footer/footer.component';
 import { DetailVideoComponent } from './detail-video/detail-video.component';
-import { InscriptionComponent } from './inscription/inscription.component';
+import { ScripteComponent } from './scripte/scripte.component';
+import { FormsModule } from '@angular/forms';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -48,13 +53,16 @@ import { InscriptionComponent } from './inscription/inscription.component';
     GestionCommantaireComponent,
     FooterComponent,
     DetailVideoComponent,
-    InscriptionComponent,
+    AuthentificationComponent,
+    ScripteComponent,
+  
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
     
   ],
   providers: [

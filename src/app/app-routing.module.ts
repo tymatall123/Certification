@@ -15,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { CategorieComponent } from './Admin-general/categorie/categorie.component';
 import { GestionCoachsComponent } from './Admin-general/gestion-coachs/gestion-coachs.component';
 import { GestionCommantaireComponent } from './Admin-general/gestion-commantaire/gestion-commantaire.component';
-import { InscriptionComponent } from './inscription/inscription.component';
+import { ScripteComponent } from './scripte/scripte.component';
+
 
 
 const routes: Routes = [
@@ -25,7 +26,7 @@ const routes: Routes = [
   { path: 'propos', component:PageProposComponent },
   { path: 'Regime', component:PageRegimeComponent },
   { path: 'Service', component:PageServiceComponent },
-  { path: 'Auth', component:AuthentificationComponent},
+  { path: 'connexion', component:AuthentificationComponent},
   // Admin
   { path: 'Acceuil-admin', component:AcceuilAdminComponent },
   { path: 'gestion-regime', component:GestionRegimeComponent},
@@ -36,7 +37,9 @@ const routes: Routes = [
   { path: 'categorie', component:CategorieComponent },
   { path: 'coach', component:GestionCoachsComponent },
   { path: 'page-acceuil', component:PageAcceuilComponent }, 
-  { path: 'inscrire', component:InscriptionComponent }, 
+  { path: 'scripte', component:ScripteComponent }, 
+  
+  {path:'',redirectTo: 'connexion' , pathMatch:'full',},
 
 ];
 
