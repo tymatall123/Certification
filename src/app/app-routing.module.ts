@@ -15,6 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { CategorieComponent } from './Admin-general/categorie/categorie.component';
 import { GestionCoachsComponent } from './Admin-general/gestion-coachs/gestion-coachs.component';
 import { GestionCommantaireComponent } from './Admin-general/gestion-commantaire/gestion-commantaire.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+
 
 const routes: Routes = [
   // utilisateur
@@ -33,11 +35,9 @@ const routes: Routes = [
   { path: 'footer', component:FooterComponent },
   { path: 'categorie', component:CategorieComponent },
   { path: 'coach', component:GestionCoachsComponent },
-  { path: 'page-acceuil', component:PageAcceuilComponent },
+  { path: 'page-acceuil', component:PageAcceuilComponent }, 
+  { path: 'inscrire', component:InscriptionComponent }, 
 
-
-
-  
 ];
 
 @NgModule({

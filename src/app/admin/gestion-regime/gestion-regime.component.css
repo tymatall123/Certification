@@ -111,7 +111,7 @@ body{
     margin-right: 8px;
 }
 .wrapper .sidebar_menu ul li a:hover{
-    background: linear-gradient(to right,rgba(206, 107, 27, 0.733),
+    background: linear-gradient(to right,#E91F23,
     rgba(131, 120, 88, 0.199));
     color: rgb(255, 253, 253);
     font-size: 25px;
@@ -119,12 +119,12 @@ body{
 }
 
 .wrapper .sidebar_menu ul li a.active{
-    background: linear-gradient(to right,rgba(206, 107, 27, 0.733),
+    background: linear-gradient(to right,#E91F23,
     rgba(131, 120, 88, 0.199));
 }
 .wrapper .sidebar_menu ul li a.active:hover{
     background: linear-gradient(to right,rgba(131, 120, 88, 0.199 ),
-    rgba(206, 107, 27, 0.733));
+    #E91F23);
 }
 .wrapper .sidebar_menu .hamburger{
     position: absolute;
@@ -169,7 +169,7 @@ body{
 }
 
 .wrapper .container .iten_wrap .item{
-    background: #fff;
+    background: white;
 	border: 1px solid #e0e0e0;
 	padding: 25px;
 	font-size: 14px;
@@ -261,18 +261,6 @@ body{
 }
 .card-box:hover .card-box-footer {
     background: rgba(0, 0, 0, 0.3);
-}
-.bg-blue {
-    background-color: #00c0ef !important;
-}
-.bg-green {
-    background-color: #00a65a !important;
-}
-.bg-orange {
-    background-color: #f39c12 !important;
-}
-.bg-red {
-    background-color: #d9534f !important;
 }
 .row2 {
     display: -ms-flexbox !important;

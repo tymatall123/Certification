@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +23,7 @@ import { GestionCoachsComponent } from './Admin-general/gestion-coachs/gestion-c
 import { GestionCommantaireComponent } from './Admin-general/gestion-commantaire/gestion-commantaire.component';
 import { FooterComponent } from './footer/footer.component';
 import { DetailVideoComponent } from './detail-video/detail-video.component';
+import { InscriptionComponent } from './inscription/inscription.component';
 
 @NgModule({
   declarations: [
@@ -43,13 +47,19 @@ import { DetailVideoComponent } from './detail-video/detail-video.component';
     GestionCoachsComponent,
     GestionCommantaireComponent,
     FooterComponent,
-    DetailVideoComponent
+    DetailVideoComponent,
+    InscriptionComponent,
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
