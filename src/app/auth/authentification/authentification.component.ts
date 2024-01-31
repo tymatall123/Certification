@@ -1,4 +1,7 @@
+import { compileNgModule } from '@angular/compiler';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/servic/auth.service';
 
 @Component({
   selector: 'app-authentification',
@@ -6,91 +9,41 @@ import { Component } from '@angular/core';
   styleUrls: ['./authentification.component.css']
 })
 export class AuthentificationComponent {
-  nom: string="" ;
-  prenom: string ="";
-  role: string ="";
-  email: string ="";
-  password: string ="";
-  authService: any;
-  route: any;
 
 
+  // nom: string="" ;
+  // prenom: string ="";
+  // role: string ="";
+  // email: string ="";
+  // password: string ="";
+  // route: any;
   
+
+  fomdata = {
+    email : '',
+    password : '',
+  }
+ 
+
+  constructor(private router:Router, private authservice : AuthService){}
+
+
   ngOnInit() {
-
+    // this.connexion();
   }
-  
-  
-  
-  inscription(){
-  if (this.nom=='' || this.prenom=='' || this.nom=='' || this.email=='' || this.password==''  || this.password=='')  {
-    this.showMessage("error", "Oops","Veuillez renseigner tous les champs");
+
+
+
+  connexion() : void{
+    console.log("data", this.fomdata)
+   const datainput = {
+    email: this.fomdata.email,
+    password :this.fomdata.password,
+   }
+   this.authservice.login(datainput).subscribe((response : any)=>{
+    console.log("voir info", response)
+    this.router.navigate(['/Acceuil'])
+   })
    
-  }
-else {
-const   user={
-    prenon:this.prenom,
-    nom:this.nom,
-    email:this.email,
-    role:this.role,
-    password:this.password,
-
-    
-  }
-  this.authService.register(user).subscribe(
-    (response:any) => {
-     
-      console.log(response)
-      this.showMessage('success','Felicitation','Bienvenu dans Fit-Together')
-      this.route.navigate(['/authentification'])
-    },
-    (error:any) => {
-      // Gérez les erreurs d'inscription.
-      console.error('Erreur d\'inscription :', error);
-    }
-  )}
 }
-  showMessage(arg0: string, arg1: string, arg2: string) {
-    throw new Error('Method not implemented.');
-  }
-
-connexion(){
-  if(this.email=='' || this.password==''){
-    this.showMessage("error", "Oops","Veuillez renseigner tous les champs");
-
-  } else{
-    const credentials={
-      email:this.email,
-      password:this.password
-    }
-    this.authService.login(credentials).subscribe(
-      (response:any) => {
-        // Stocker le service dans le token ou dans le local storage.
-        console.log(response)
-        console.log(response.data.role)
-        localStorage.setItem('userOnline', response.token)
-        localStorage.setItem('userInfo', response.data)
-        if(response.token){
-          
-          if(response.data.role=='  user'){
-            this.route.navigate(['/Acceuil'])
-            
-          }else if(response.data.role=='coach'){
-            this.route.navigate(['/acceuil-dasboard'])
-
-          }
-          else{
-            this.showMessage('error','Oops', 'Ce compte n/existe pas veuiller vous inscrire ')
-          }
-          }
-        // this.route.navigate(['/accueil'])
-      },
-      (error:any) => {
-        // gérez les erreurs des connexion.
-        console.error('Erreur de connexion :', error);
-      }
-    );
-  }
-}
-
 }
