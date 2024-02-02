@@ -270,5 +270,20 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
-
+#toto {
+display: flex;
+justify-content: center;
+margin-top: -90px;
+margin-left: 80px;
+}
+.btn-btn{
+border: 1px solid #E91F23;
+background-color: white;
+}
+.card{
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+    margin-left: 180px;
+}
 

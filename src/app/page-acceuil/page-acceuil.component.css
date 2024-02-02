@@ -1,0 +1,7 @@
+/* *{
+    border: solid red;
+} */
+.carde :hover{
+    background-color: #ff0000; 
+    color: white;
+}
