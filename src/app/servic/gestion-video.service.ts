@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable,of } from 'rxjs';
+
 
 
 @Injectable({
@@ -21,7 +22,16 @@ export class GestionVideoService {
 
  // methode pour ajouter donnée ves l'api
 addvideo(video : any) {
-  return this.http.post<any>(`{https://swagger.imaletbenji.com/api/video}/Ajoutvideo`, video);
+  return this.http.post<any>(`https://swagger.imaletbenji.com/api/video`, video);
+}
+
+addvid(data: any):Observable<any>{
+  const Token = localStorage.getItem('access_token');
+
+  return Token?
+  this.http.post<any>( `https://swagger.imaletbenji.com/api/video`, {
+      headers: new HttpHeaders({ 'Authorization': `Bearer {Token} `})
+    }) : of(null);
 }
 
 getVideoById(id: string): Observable<any> {

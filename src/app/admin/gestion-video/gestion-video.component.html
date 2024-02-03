@@ -158,25 +158,25 @@
           <form>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Titre</label>
-              <input type="text" class="form-control" id="titre-name" name="titre" ngModel="titre">
+              <input type="text" class="form-control" id="titre-name" name="titre" [(ngModel)]="titre">
             </div>
             <div class="mb-3">
               <label for="image" class="col-form-label">Path_video</label>
-               <input type="file" (change)="onFileSelected($event)" accept="video/*"  name="path_video" ngModel="path_video"/>
+               <input type="file" (change)="onFileSelected($event)" accept="video/*"  name="path_video" [(ngModel)]="path_video"/>
             </div>
             <div class="mb-3">
-              <label for="number" class="col-form-label">durée</label>
-              <input type="text" class="form-control" id="number" name="duree" ngModel="duree" >
+              <label for="number" class="col-form-label">duree</label>
+              <input type="text" class="form-control" id="number" name="duree" [(ngModel)]="duree" >
             </div>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Sous_catégorie</label>
-              <input type="text" class="form-control" id="Sous_catégorie- name" name="Sous_catégorie" ngModel="Sous_catégorie">
+              <input type="text" class="form-control" id="sous_categorie_id- name" name="sous_categorie_id" [(ngModel)]="sous_categorie_id">
             </div>
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn danger" data-bs-dismiss="modal">Annuler</button>
-          <button type="button" class="btn-btn" (click)="ajouterVideo()">Ajouter</button>
+          <button type="button" class="btn-btn" (click)="sendVideo()">Ajouter</button>
         </div>
       </div>
     </div>
@@ -194,19 +194,19 @@
         <form>
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Titre</label>
-            <input type="text" class="form-control" id="titre-name" name="titre">
+            <input type="text" class="form-control" id="titre-name" name="titre" [(ngModel)]="titre">
           </div>
           <div class="mb-3">
             <label for="image" class="col-form-label">Path_video</label>
-            <input type="image" class="form-control" id="image" name="Path_video">
+            <input type="image" class="form-control" id="image" name="Path_video" [(ngModel)]="path_video">
           </div>
           <div class="mb-3">
-            <label for="number" class="col-form-label">durée</label>
-            <input type="text" class="form-control" id="number" name="duree" >
+            <label for="number" class="col-form-label">duree</label>
+            <input type="text" class="form-control" id="number" name="duree" [(ngModel)]="duree" >
           </div>
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Sous_catégorie</label>
-            <input type="text" class="form-control" id="Sous_catégorie- name" name="Sous_catégorie">
+            <input type="text" class="form-control" id="Sous_categorie- name" name="Sous_categorie">
           </div>
         </form>
       </div>
