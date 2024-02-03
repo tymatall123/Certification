@@ -39,30 +39,71 @@ listeVideo(){
 }
 // Méthode pour ajouter une vidéo
 
-ajouterVideo (): void{
-  this.ajouterVideo,{
-   titre :this.titre,
-    path_video:this.path_video,
-    updated_at:this.created_at,
-    created_at:this.updated_at
-  };
+ajouterVideo(): void {
+  if (!this.selectedVideoFile) {
+    console.error("Veuillez sélectionner un fichier vidéo.");
+    return;
+  }
 
-  this.videoService.addvideo(this.ajouterVideo).subscribe((datavideo : any) =>{
-    console.log("ajout", datavideo);
-    window.location.reload();
-  }),
-  console.error('Erreur lors de l/ajout:', 
-  )
-  
+  this.videoService.uploadVideo(this.selectedVideoFile).subscribe(
+    (uploadData: any) => {
+      // Utilisez l'ID de la vidéo uploadée dans votre ajout de vidéo. les pages que tu avais coder la nuit 
+      const videoId = uploadData.videoId;
+
+      const videoToAdd = {
+        titre: this.fomdata.titre,
+        path_video: this.fomdata.path_video,
+        updated_at: this.fomdata.updated_at,
+        created_at: this.fomdata.created_at,
+      };
+
+      this.videoService.addvideo(videoToAdd).subscribe(
+        (data: any) => {
+          console.log("Ajout réussi", data);
+          window.location.reload();
+        },
+        (error) => {
+          console.error("Erreur lors de l'ajout:", error);
+        }
+      );
+    },
+    (uploadError) => {
+      console.error("Erreur lors de l'upload de la vidéo:", uploadError);
+    }
+  );
 }
+
+// Méthode pour uploader une vidéo
+selectedVideoFile: File | null = null;
+
+onFileSelected(event: any): void {
+  const file = event.target.files[0];
+  this.selectedVideoFile = file;
+}
+
 
 // méthode pour modifier une vidéo
-Modifiervideo() : void{
-  this.Modifiervideo,{
-    titre:this.titre,
-    path_video:this.path_video,
-  }
+
+modifierVideo(videoId: string): void {
+  const videoToUpdate = {
+    titre: this.fomdata.titre,
+    path_video: this.fomdata.path_video,
+    updated_at: this.fomdata.updated_at,
+    created_at: this.fomdata.created_at,
+  };
+
+  this.videoService.updateVideo(videoId, videoToUpdate).subscribe(
+    (data: any) => {
+      console.log("Modification réussie", data);
+      window.location.reload();
+    },
+    (error) => {
+      console.error("Erreur lors de la modification:", error);
+    }
+  );
 }
+
+
 
 
 }

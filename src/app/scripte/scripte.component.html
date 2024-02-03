@@ -17,7 +17,7 @@
                 <input type="text" name="nom" placeholder="Nom" [(ngModel)]="nom"/>
                 <input type="email" name="email" placeholder="email" [(ngModel)]="email"/>
                 <input type="password" name="password" placeholder="Password"[(ngModel)]="password" />
-                <button *ngIf="inscription"  (click)="inscription()" routerLink="/app-authentification">S'inscrire</button>
+                <button (click)="inscription()" routerLink="/app-authentification">S'inscrire</button>
             </form>
         </div>
         <div class="overlay-container">

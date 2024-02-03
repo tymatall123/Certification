@@ -46,7 +46,14 @@ deleteVideo(id: any) {
   ListPost(){
     return this.http.get(`https://swagger.imaletbenji.com/api/posts`)
   }
+// méthode pour oploader une vidéo
+uploadVideo(file: File): Observable<any> {
+  const formData = new FormData();
+  formData.append('video', file, file.name);
 
+  const url = `{}`;
+  return this.http.post(url, formData);
+}
 
 }
 

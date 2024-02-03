@@ -1,14 +1,13 @@
 
     <div style="width: 100%; height: 79px; left: -5px; top: 0px; position: absolute">
         <div style="width: 100%; height: 79px; left: -20px; top: 0px; position: absolute; background: white"></div>
-        <div style="width: 1000px; height: 50px; left: 20%; top: 14px; position: absolute">
-            <button style="width: 100px; height: 30px; left: 83%; top: 10px; position: absolute; background: linear-gradient(0deg, #E91F23 0%, #E91F23 100%); border-radius: 100px; color: white; border: none;"  > Se connecter</button> 
+        <div style="width: 1000px; height: 50px; left: 35%; top: 14px; position: absolute">
+            <button  style="width: 100px; height: 30px; left: 83%; top: 10px; position: absolute; background: linear-gradient(0deg, #E91F23 0%, #E91F23 100%); border-radius: 100px; color: white; border: none;"  ><a [routerLink]="['/connexion']" routerLinkActive="router-link-active" ></a> Se connecter</button> 
             <div style="left: 0px; top: 10px; position: absolute; color: #E91F23; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Accueil</div>
-            <div style="left: 127px; top: 10px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Service</div>
-            <div style="left: 248px; top: 10px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">A propos</div>
-            <div style="left: 379px; top: 10px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Contact</div>
-            <div style="left: 504px; top: 11px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">regime</div>
-            <div style="left: 95%; top: 12px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Déconnecter</div>
+            <div [routerLink]="['/propos']"  style="left: 127px; top: 10px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word" >Service</div>
+            <div [routerLink]="['/Contact']"  style="left: 248px; top: 10px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">A propos</div>
+            <div  [routerLink]="['/Regime']" style="left: 379px; top: 10px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word"  >Contact</div>
+            <div   [routerLink]="['/Acceuil']"style="left: 504px; top: 11px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word"  >regime</div>
         </div>
     </div>
     <div style="width: 99%; height: 303.62px; left: -12px; top: 10%; position: absolute; background: black"></div>
@@ -48,7 +47,7 @@
     <div style="width: 624px; height: 59.63px; left: 480px; top: 170%; position: absolute; text-align: center; color: black; font-size: 48px; font-family: Manrope; font-weight: 300; word-wrap: break-word">Listes Des Cours disponibles</div>
     <div style="width: 80%; height: 755px; left: 0px; top: 190%; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 132px; display: inline-flex">
         <div style="width: 235px; height: 755px; position: relative">
-            <div style="width: 453px; height: 755px; left: 30%; top: 0px; position: absolute">
+            <div style="width: 453px; height: 755px; left: 35%; top: 0px; position: absolute">
                 <div style="width: 380px; height: 755px; left: -30px; top: 0px; position: absolute">
                     <div style="width: 450px; height: 755px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25)"></div>
                     <div style="width: 400px; height: 236.76px; left: 23px; top: 450px; position: absolute; color: black; font-size: 16px; font-family: Manrope; font-weight: 300; word-wrap: break-word"> le Body Balance transcende les limites conventionnelles de l'entraînement physique. Cette discipline innovante puise dans les principes du yoga, du tai-chi et de la gymnastique pour créer une expérience immersive qui élève non seulement le niveau de condition physique, mais nourrit également le bien-être mental. Rejoignez-nous dans ce voyage où le mouvement gracieux et la concentration se conjuguent pour sculpter le corps tout en apaisant l'esprit, transformant votre routine fitness en une célébration quotidienne de l'équilibre intérieur et de la vitalité extérieure.</div>
@@ -63,10 +62,10 @@
                     <div style="left: 25px; top: 3px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Manrope; font-weight: 300; word-wrap: break-word">Suivez-nous</div>
                 </div>
             </div>
-            <img style="width: 50px; height: 50px; left: 40px; top: 690px; position: absolute; border-radius: 9999px" src="https://s3-alpha-sig.figma.com/img/36a6/06e7/bb7fb861f7cbcdb5246cb45e466d2260?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6nRKnRafN6dqw1II55~rwuf2yFHxNDiDn6CvJmEAx~J2i9Lxfxx352QLZCFpxMMsKhKaKb9TsB4LhUpwNIr7XILjodBJ7yjD05VYPfrneFODOtu4QOkD-MqhJcLrsWS0AO5Y4GiHPcDLoMbKm9EPr1D~nKy5GQ5ZZY5oElLcqe322nRfMifM8bVYbwp9cg1v5fYVFYIqMIeNMfwnb4lOOlmec0c4WCrln531sG1LsoX0l7e4TvNX5c9KKE84NUnp1Coy8Ow6BUEJYHYdxPtoDo38-8ADd4iTa81AmKuz3d-1YlMO0Imx3XTJPRUOpSfcbYNrns6azXjprAgqbu98A__" />
+            <img style="width: 50px; height: 50px; left: 55px; top: 690px; position: absolute; border-radius: 9999px" src="https://s3-alpha-sig.figma.com/img/36a6/06e7/bb7fb861f7cbcdb5246cb45e466d2260?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6nRKnRafN6dqw1II55~rwuf2yFHxNDiDn6CvJmEAx~J2i9Lxfxx352QLZCFpxMMsKhKaKb9TsB4LhUpwNIr7XILjodBJ7yjD05VYPfrneFODOtu4QOkD-MqhJcLrsWS0AO5Y4GiHPcDLoMbKm9EPr1D~nKy5GQ5ZZY5oElLcqe322nRfMifM8bVYbwp9cg1v5fYVFYIqMIeNMfwnb4lOOlmec0c4WCrln531sG1LsoX0l7e4TvNX5c9KKE84NUnp1Coy8Ow6BUEJYHYdxPtoDo38-8ADd4iTa81AmKuz3d-1YlMO0Imx3XTJPRUOpSfcbYNrns6azXjprAgqbu98A__" />
         </div>
         <div style="width: 483px; height: 755px; position: relative">
-            <div style="width: 383px; height: 755px; left: 51%; top: 0px; position: absolute">
+            <div style="width: 383px; height: 755px; left: 55%; top: 0px; position: absolute">
                 <div style="width: 283px; height: 755px; left: 0px; top: 0px; position: absolute">
                     <div style="width: 450px; height: 755px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25)"></div>
                     <div style="width: 400px; height: 236.76px; left: 23px; top: 455px; position: absolute; color: black; font-size: 16px; font-family: Manrope; font-weight: 300; word-wrap: break-word">Inspiré par la méthodologie du fondateur Joseph Pilates, notre approche moderne intègre des mouvements fluides, une respiration consciente et une précision anatomique. Plongez dans une séance où chaque exercice est conçu pour renforcer le noyau, améliorer la posture et révéler la puissance intérieure. Que vous soyez débutant ou passionné de fitness, le Pilates Les Mills vous offre un voyage vers une meilleure conscience corporelle et un bien-être total.</div>
@@ -81,10 +80,10 @@
                     <div style="left: 40px; top: 5px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Manrope; font-weight: 300; word-wrap: break-word">Suivez-nous</div>
                 </div>
             </div>
-            <img style="width: 50px; height: 50px; left: 200px; top: 695px; position: absolute; border-radius: 9999px" src="https://s3-alpha-sig.figma.com/img/f3fe/78fe/6cc3b6afab3d3e8928380679ade3659c?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GHOfdHHXbTwCEUMHZfqKv92zJmTrdLNS8r3~Xa1HkcqpdQoHmipJZPIy49QqUl~4jj7Kp97TsLaPchngRT-hrc7O5kcRU2k5~eX-oxu2Wq-RPhSHq~RrhM4joxtU08tUKpe8ITTCUCOLGSr9G5rr1TYfqOPanayrxnEgSp3hOTg3IqovG3w~DxoHeKUEWfQFmDEq~rsIzzKjLS7clD-r7MlYlIF7Wt41wz2p1kSFUu-CJJ9OSn~sTXcK35BTEYailUpcJGsLmezeBBZCtm9NlYslYE6RrVvkg9xoz4CzFTmZxBoNXUArnWynQvBm-qU4ENyQsZZcLhKpF2Z-iS1XqQ__" />
+            <img style="width: 50px; height: 50px; left: 225px; top: 695px; position: absolute; border-radius: 9999px" src="https://s3-alpha-sig.figma.com/img/f3fe/78fe/6cc3b6afab3d3e8928380679ade3659c?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GHOfdHHXbTwCEUMHZfqKv92zJmTrdLNS8r3~Xa1HkcqpdQoHmipJZPIy49QqUl~4jj7Kp97TsLaPchngRT-hrc7O5kcRU2k5~eX-oxu2Wq-RPhSHq~RrhM4joxtU08tUKpe8ITTCUCOLGSr9G5rr1TYfqOPanayrxnEgSp3hOTg3IqovG3w~DxoHeKUEWfQFmDEq~rsIzzKjLS7clD-r7MlYlIF7Wt41wz2p1kSFUu-CJJ9OSn~sTXcK35BTEYailUpcJGsLmezeBBZCtm9NlYslYE6RrVvkg9xoz4CzFTmZxBoNXUArnWynQvBm-qU4ENyQsZZcLhKpF2Z-iS1XqQ__" />
         </div>
         <div style="width: 483px; height: 755px; position: relative">
-            <div style="width: 350px; height: 755px; left: 165px; top: 0px; position: absolute">
+            <div style="width: 350px; height: 755px; left: 189px; top: 0px; position: absolute">
                 <div style="width: 483px; height: 755px; left: 0px; top: 0px; position: absolute">
                     <div style="width: 450px; height: 755px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25)"></div>
                     <div style="width: 400px; height: 236.76px; left: 23px; top: 458px; position: absolute; color: black; font-size: 16px; font-family: Manrope; font-weight: 300; word-wrap: break-word">Un noyau fort est la base d'une bonne posture et d'une stabilité accrue. Les exercices pour les abdominaux ne se limitent pas aux redressements assis classiques. Intégrez des exercices de planche, des rotations du tronc et des relevés de jambes pour solliciter l'ensemble des muscles abdominaux. N'oubliez pas de maintenir une bonne technique pour maximiser les avantages tout en minimisant le risque de blessure.</div>
@@ -99,12 +98,12 @@
                     <div style="left: 36px; top: 5px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Manrope; font-weight: 300; word-wrap: break-word">Suivez-nous</div>
                 </div>
             </div>
-            <img style="width: 50px; height: 50px; left: 180px; top: 687px; position: absolute; border-radius: 9999px" src="https://s3-alpha-sig.figma.com/img/db3b/aac1/359965fc66857764addb5f5f92a361db?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JwAYlhjoxy8k7t6UJDcpNoXMzqOijOOsOYVhPNI1mtS0jk4EF8k5iCuRsc5IZT-Mfp3pfvO9A90VmH7KiQID0zW-t82wfAhmtRuw2YWKcxkcyIva6gl83oahHoPBz~ndSzSHNmiqrmRe9SlD3Pav~75nju9q1mcIZMoLXGxPlhgHSkx--40htaUnkfU7oImFZyTe9XEzLota7tTugeKfXKZSRbku-XGUTJ6rxDjsFEVvJD1rd7Un34Zid15JdGqDLMYbRe49qGzAE3jZ5E6B42~~Zh2~0vPcF6q~slQryVIZQC5xsC5PNYgA4l8Qzf~DbFItGXq835NRhPvrR6AWRA__" />
+            <img style="width: 50px; height: 50px; left: 197px; top: 687px; position: absolute; border-radius: 9999px" src="https://s3-alpha-sig.figma.com/img/db3b/aac1/359965fc66857764addb5f5f92a361db?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JwAYlhjoxy8k7t6UJDcpNoXMzqOijOOsOYVhPNI1mtS0jk4EF8k5iCuRsc5IZT-Mfp3pfvO9A90VmH7KiQID0zW-t82wfAhmtRuw2YWKcxkcyIva6gl83oahHoPBz~ndSzSHNmiqrmRe9SlD3Pav~75nju9q1mcIZMoLXGxPlhgHSkx--40htaUnkfU7oImFZyTe9XEzLota7tTugeKfXKZSRbku-XGUTJ6rxDjsFEVvJD1rd7Un34Zid15JdGqDLMYbRe49qGzAE3jZ5E6B42~~Zh2~0vPcF6q~slQryVIZQC5xsC5PNYgA4l8Qzf~DbFItGXq835NRhPvrR6AWRA__" />
         </div>
     </div>
    </div>
    <!-- pagination des cartes -->
-   <div style="width: 155px; height: 20px; left: 650px; top: 298%; position: absolute">
+   <div style="width: 155px; height: 20px; left: 650px; top: 306%; position: absolute">
     <div style="width: 20px; height: 20px; left: 0px; top: 0px; position: absolute; background: #E91F23; border-radius: 9999px"></div>
     <div style="width: 20px; height: 20px; left: 44px; top: 0px; position: absolute; background: #E91F23; border-radius: 9999px"></div>
     <div style="width: 20px; height: 20px; left: 88px; top: 0px; position: absolute; background: #E91F23; border-radius: 9999px"></div>
@@ -121,76 +120,18 @@
       Suivant
     </button>
 </div> -->
-       <div style="width: 527px; left: 500px; top: 310%; position: absolute; text-align: center; color: black; font-size: 60px; font-family: Source Sans Pro; font-weight: 700; line-height: 20px; word-wrap: break-word">
+       <!-- <div style="width: 527px; left: 500px; top: 320%; position: absolute; text-align: center; color: black; font-size: 60px; font-family: Source Sans Pro; font-weight: 700; line-height: 20px; word-wrap: break-word">
           Les coachs
-       </div>
-    <div class="row">
-        <div style="width: 50%; height: 397.17px; left: 0px; top: 320%; position: absolute">
-            <div style="width: 440px; height: 385px; left: 33px; top: 0px; position: absolute">
-                <div style="width: 440px; height: 397px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25); border-radius: 50px"></div>
-
-                <div style="width: 440px; height: 385px; left: 0px; top: 0px; position: absolute">
-                    <div style="left: 28.45px; top: 26.15px; position: absolute; text-align: center; color: black; font-size: 32px; font-family: Manrope; font-weight: 300; word-wrap: break-word">Corey Calliet</div>
-                    <div style="left: 52.43px; top: 68.82px; position: absolute; text-align: center; color: #E91F23; font-size: 32px; font-family: Manrope; font-weight: 300; word-wrap: break-word">manager</div>
-                    <div style="width: 278.12px; left: 8px; top: 135.68px; position: absolute; color: black; font-size: 12px; font-family: Manrope; font-weight: 300; word-wrap: break-word">Corey Calliet s'est fait un nom en tant que coach de fitness réputé, mettant l'accent sur la transformation physique et mentale. Il a étudié la science de <br> l'exercice et a obtenu des certifications en <br> entraînement personnel, ce qui lui a <br> permis de développer une approche holistique de la remise en forme.</div>
-                </div>
-                <img style="width: 332px; height: 284px; left: 120px; top: 52px; position: absolute" src="https://s3-alpha-sig.figma.com/img/f8ad/380b/e2db4b9e5a0457b1f7aa372e405d7d38?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bqMXbKoYUy7~GZZLAtbYhKh49ZgBoRjELB6MS97xlJOvYQs~uwxzjgkdna0jJVTbpx869ZAraNYu4eoJn8mZ45qoypmWCW36iabeCecuoHTI8wKG1c6JL2z2LOySKufxppIGItdqxpaGKbX5JrSrkbEVohb2oIuGACLhhffJMQSgvkCehScNBdBr1JtPnuR30w5A1YqThCyzA7Z3aGb6jsmSeqDNuTCWaXcjFwxSX2D6l3GpKX5DhcziMeKUz~uanqrYLXwIw2MtD~OpgL25VxrB1XaZLQNlRqA85MX6e7Piquk90CgtNC4blYXLe0iirvnJ63LjdK8h-RMcVev6Dg__" />
-            </div>
-            <!-- jasmine patl -->
-            <div style="width: 440px; height: 397px; left: 510px; top: 0px; position: absolute">
-                <div style="width: 440px; height: 397px; left: 0px; top: 0px; position: absolute">
-                    <div style="width: 440px; height: 397px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25); border-radius: 50px"></div>
-                    <div style="left: 18.89px; top: 28px; position: absolute; text-align: center; color: black; font-size: 32px; font-family: Manrope; font-weight: 300; word-wrap: break-word"> Jasmine Patel</div>
-                    <div style="left: 52.43px; top: 72px; position: absolute; text-align: center; color: #E91F23; font-size: 32px; font-family: Manrope; font-weight: 300; word-wrap: break-word">manager</div>
-                    <div style="width: 332.60px; left: 10px; top: 146px; position: absolute; color: black; font-size: 12px; font-family: Manrope; font-weight: 300; word-wrap: break-word">Certifiée par l'International Fitness Professionals Association <br> (IFPA) et forte de plusieurs années <br> d'expérience dans l'industrie, Jasmine a aidé des individus de <br> tous horizons à atteindre leurs objectifs <br> de remise en forme.Elle se concentre sur l'importance de  la flexibilité, de la force et de la conscience corporelle pour <br> créer des changements durables.</div>
-                </div>
-                <div style="width: 357px; height: 308px; left: 150px; top: 27.83px; position: absolute; border-radius: 50px; overflow: hidden; justify-content: center; align-items: center; display: inline-flex">
-                    <div style="flex: 1 1 0; align-self: stretch; justify-content: flex-end; align-items: center; display: inline-flex">
-                        <img style="width: 342px; height: 308px" src="https://s3-alpha-sig.figma.com/img/eee2/03f9/11c08d8b598f789e1b6ce3c2914b425c?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JetcVv1RyEAl2l-wNXgD372AIMz882~151W8p9t96RFvpghDvbVyx-szWciWvnRzuk64hHhpsiw1i2f0ERKOlShMq~~wQdYErBvCpGdgCMG2ujF8UMkThZ8W0jTKefFJyLrfEzbhv~94PtXhHpwEWzCJrobnXOULF12EtVTDVr7h3j6kB-utEsUfR5dmhmlM1YR7gMfTOmvxt2Z34CLkGsnTGyeN8BkBb0J2ZdCdLiJrtrHkAnIhVrw9F6~UbMakk2uBecnJrWkeg30XUrRLNh7B0frIo5oqJs3kngz01b4777AA2VlEAe4iFdoXd45UAKFxK1JeisPZlLev4TsRxw__" />
-                    </div>
-                </div>
-            </div>
-            <!-- alex rodreigez -->
-            <div style="width: 441px; height: 397px; left: 989px; top: 0.17px; position: absolute">
-                <div style="width: 440px; height: 397px; left: 0px; top: 0px; position: absolute">
-                    <div style="width: 440px; height: 397px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25); border-radius: 50px"></div>
-                    <div style="width: 30.58px; height: 33px; left: 29.63px; top: 316px; position: absolute">
-                        <div style="width: 30.58px; height: 33px; left: 0px; top: 0px; position: absolute; background: rgba(159.38, 159.38, 159.38, 0.15); border-radius: 50px"></div>
-                        <div style="width: 19.12px; height: 20px; left: 5.73px; top: 7px; position: absolute">
-                            <div style="width: 6.76px; height: 7.06px; left: 6.23px; top: 6.52px; position: absolute; background: black; border-radius: 50px"></div>
-                            <div style="width: 19.12px; height: 20px; left: 0px; top: 0px; position: absolute; background: black; border-radius: 50px"></div>
-                        </div>
-                    </div>
-                    <div style="width: 30.58px; height: 33px; left: 81.24px; top: 316px; position: absolute">
-                        <div style="width: 30.58px; height: 33px; left: 0px; top: 0px; position: absolute; background: rgba(159.38, 159.38, 159.38, 0.15); border-radius: 50px"></div>
-                        <div style="width: 19.12px; height: 20px; left: 5.73px; top: 7px; position: absolute; background: black; border-radius: 50px"></div>
-                    </div>
-                    <div style="width: 30.58px; height: 33px; left: 132.85px; top: 316px; position: absolute">
-                        <div style="width: 30.58px; height: 33px; left: 0px; top: 0px; position: absolute; background: rgba(159.38, 159.38, 159.38, 0.15); border-radius: 50px"></div>
-                        <div style="width: 19.12px; height: 20px; left: 5.73px; top: 6px; position: absolute; background: black; border-radius: 50px"></div>
-                    </div>
-                    <div style="width: 30.58px; height: 33px; left: 178.73px; top: 316px; position: absolute">
-                        <div style="width: 30.58px; height: 33px; left: 0px; top: 0px; position: absolute; background: rgba(159.38, 159.38, 159.38, 0.15); border-radius: 50px"></div>
-                        <div style="width: 19.12px; height: 20px; left: 6.69px; top: 4px; position: absolute; background: black; border-radius: 50px"></div>
-                    </div>
-                    <div style="left: 22.72px; top: 28px; position: absolute; text-align: center; color: black; font-size: 32px; font-family: Manrope; font-weight: 300; word-wrap: break-word">Alex Rodrigez</div>
-                    <div style="left: 52.43px; top: 72px; position: absolute; text-align: center; color: #E91F23; font-size: 32px; font-family: Manrope; font-weight: 300; word-wrap: break-word">manager</div>
-                    <div style="width: 249.45px; left: 14.34px; top: 150px; position: absolute; color: black; font-size: 12px; font-family: Manrope; font-weight: 300; word-wrap: break-word">Certifié par la National Academy of Sports Medicine (NASM) et détenteur d'une certification en coaching de vie, Alex adopte une approche holistique de la remise en forme en mettant l'accent sur le bien-être mental et émotionnel de ses clients. </div>
-                </div>
-                <div style="width: 288px; height: 308px; left: 155px; top: 35.83px; position: absolute; border-radius: 50px; overflow: hidden; justify-content: flex-start; align-items: center; display: inline-flex">
-                    <div style="width: 362px; align-self: stretch; justify-content: flex-end; align-items: center; display: inline-flex">
-                        <img style="width: 342px; height: 308px" src="https://s3-alpha-sig.figma.com/img/b779/7473/47d514418b129c6f7ed3da89d6c3c709?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VDT9urIu5j8PC3lZ7EqFpSBWBy-jz1hv0pOlsxISpQje7BeNHelTeXlVZSASO~Ao13MIwOAozkWgpwkRO4FF0TrAuiiBQv9yYj935k8-hEyUuW3WvBIWL-Sy0BWs-kPGfdNwIp-Kz81qn1uZrtDa0ex36~FXBUhfmf8ZpdMOX4i7yTXmHoWwUfgbULSxcAHRIudzSqVqK~EQqI~jGxrevoRErhXuwuhkDfLQT4Vx-LVoZnkB~itvq--MTP0DPkfpaVd0X20vo2HhKmreNMlje4rrnZePtFx6ZSLEKXD6wlaSEWbv7mJQ1hrmmjJfvKPGLm~TpMQdKqt06MGVK6ZjWw__" />
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-        </div>
-
-    </div> 
-    
+       </div> -->
+       <!-- <div class="title">
+        <h1> _9 clip-path animations</h1>
+        <p>_CSS animations made only with clip-path and transition</p>
+      <div> -->
+      
+     :
     <!-- Section footer -->
-    <footer>
-        <div style="width: 100%; height: 183px; left: 0px; top: 2820px; position: absolute">
+    <!-- <footer>
+        <div style="width: 100%; height: 183px; left: 0px; top: 2770px; position: absolute">
             <div style="width: 100%; height: 183px; left: 0px; top: 0px; position: absolute; background: black; justify-content: center; align-items: center; display: inline-flex">
                 <div style="width: 100%; height: 183px; background: black"></div>
             </div>
@@ -208,7 +149,7 @@
                 <div style="width: 27px; height: 20px; left: 0px; top: 0px; position: absolute; background: rgba(102, 0, 255, 0); border-radius: 9999px; border: 1px white solid"></div>
             </div>
             <div style="width: 15%; height: 42px; left: 82%; top: 104px; position: absolute; background: #E91F23; border-radius: 20px"></div>
-            <div style="left: 1220px; top: 115px; position: absolute; color: white; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">veillez vous inscrire</div>
+            <div style="left: 1260px; top: 115px; position: absolute; color: white; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">veillez vous inscrire</div>
             <div style="width: 129.60px; height: 15px; left: 635.85px; top: 35px; position: absolute; color: white; font-size: 24px; font-family: Inter; font-weight: 400; word-wrap: break-word">Acceuil</div>
             <div style="width: 126.90px; height: 25px; left: 638.55px; top: 73px; position: absolute; color: white; font-size: 24px; font-family: Inter; font-weight: 400; word-wrap: break-word">regime</div>
             <div style="width: 282.15px; height: 15px; left: 638.55px; top: 112px; position: absolute; color: white; font-size: 24px; font-family: Inter; font-weight: 400; word-wrap: break-word">Qui Somme Nous</div>
@@ -219,4 +160,7 @@
             <div style="width: 425.25px; left: 110.70px; top: 67px; position: absolute; color: white; font-size: 20px; font-family: Inter; font-weight: 300; word-wrap: break-word">Votre aventure fitness commence aujourd'hui avec. Fit-Together</div>
         </div>
     </footer>
-     
+      -->
+
+
+
