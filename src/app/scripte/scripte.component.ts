@@ -45,7 +45,6 @@ export class ScripteComponent {
         (data) => {
           console.log("la reponse du service est :",data);
           this.showMessage('success', 'Felicitation', 'Bienvenu dans Fit-Together')
-          this.route.navigate(['/authentification'])
         }
       )
     }

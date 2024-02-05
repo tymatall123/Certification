@@ -1,3 +1,118 @@
 /* *{
     border: solid red;
 } */
+.regime{
+    left: 504px;
+    top: 11px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+.contact{
+    left: 379px; 
+    top: 10px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+.propos{
+    left: 248px; 
+    top: 10px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+.service{
+    left: 127px; 
+    top: 10px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+.acceuil{
+    left: 0px; 
+    top: 10px; 
+    position: absolute; 
+    color: #E91F23; 
+    font-size: 20px; 
+    font-family: Poppins; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.connnecter{
+    width: 100px; 
+    height: 30px; 
+    left: 90%; 
+    top: 10px; 
+    position: absolute; 
+    background: linear-gradient(0deg, #E91F23 0%, #E91F23 100%); 
+    border-radius: 100px; 
+    color: white; 
+    border: none
+}
+
+.cours{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 28%;
+}
+.video{
+    border-radius: 70px 2px 70px 2px;
+    margin-top: 5%;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.texte{
+    margin-top: -23px;
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.Sculpt{
+    border: 1px solid red;
+    background-color: white;
+    color: #E91F23;
+    border-radius: 50px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 48%;
+    margin-top: 3%;
+}
+.Sculpt:hover{
+    background-color: #E91F23;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+.textes{
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-top: 15%;
+    
+}
+.tout{
+    margin-top: 5%;
+}

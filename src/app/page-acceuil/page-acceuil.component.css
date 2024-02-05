@@ -1,172 +1,61 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
-
-:root{
-  --primary-color: #00cec9;
-  --primary-color-dark: #01a3a4;
-  --secondary-color: #576574;
-  --bg-color: #dfe6e9;
-  --text-color: white;
+.regime{
+    left: 504px;
+    top: 11px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word;
 }
-
-body{
-  background: var(--bg-color);
-  font-family: 'Nunito Sans', sans-serif;
-  padding: 10px 100px;
+.contact{
+    left: 379px; 
+    top: 10px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word
 }
-
-.container{
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  justify-content: space-evenly;
-  align-items: center;
+.propos{
+    left: 248px; 
+    top: 10px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word
 }
-
-h1{
-  font-size: 2rem;
-  color: var(--primary-color-dark);
-  margin-left: 10px;
-  line-height: 1rem;
+.service{
+    left: 127px; 
+    top: 10px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word
 }
-
-h2{
-  font-size: 1.5rem;
+.acceuil{
+    left: 0px; 
+    top: 10px; 
+    position: absolute; 
+    color: #E91F23; 
+    font-size: 20px; 
+    font-family: Poppins; 
+    font-weight: 700; 
+    word-wrap: break-word
 }
-
-p{
-  font-size: .8rem;
-}
-
-.title>p{
-  color: var(--secondary-color);
-  margin: 0px 0 20px 10px;
-}
-
-/* CARDS */
-.card{
-  margin: 5px;
-  background: white;
-  cursor: pointer;
-  border-radius: 15px;
-  position: relative;
-  padding: 25px 30px;
-  color: var(--primary-color);
-}
-
-.card::after{
-  content: '';
-  background: var(--primary-color);
-  border-radius: 15px;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 0;
-}
-
-.card-body{
-  position: relative;
-  z-index: 1;
-  transition: all .3s ease-in;
-}
-
-.card:hover .card-body{
-  color: var(--text-color);
-}
-
-/* === ANIMATIONS === */
-/* = 1. Circle = */
-.circle::after{
-  clip-path: circle(10% at 0% 0%);
-  transition: all .3s ease-in;
-}
-
-.circle:hover::after{
-  clip-path: circle(100%);
-}
-
-/* = 2. Ripple = */
-.ripple::after{
-  opacity: 0;
-  clip-path: circle(10% at 50% 50%);
-  transition: all .25s ease-in;
-}
-
-.ripple:hover::after{
-  opacity: 1;
-  clip-path: circle(100%);
-}
-
-/* = 3. Slide door = */
-.slide-door::after{
-  clip-path: inset(0% 100% 0% 100%);
-  transition: all .3s ease-in;
-}
-
-.slide-door:hover::after{
-  clip-path: inset(0% 0% 0% 0%);
-}
-
-/* = 4. Slide in = */
-.slide-in::after{
-  clip-path: inset(0% 100% 0% 0%);
-  transition: all .3s ease-in;
-}
-
-.slide-in:hover::after{
-  clip-path: inset(0% 0% 0% 0%);
-}
-
-/* = 5. Slide out = */
-.slide-out::after{
-  clip-path: inset(0% 0% 0% 100%);
-  transition: all .3s ease-in;
-}
-
-.slide-out:hover::after{
-  clip-path: inset(0% 0% 0% 0%);
-}
-
-/* = 6. Diamond = */
-.diamond::after{
-  opacity: 0;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  transition: all .1s ease-in;
-}
-
-.diamond:hover::after{
-  opacity: 1;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-/* = 7. Slide up = */
-.slide-up::after{
-  clip-path: inset(100% 0% 0% 0%);
-  transition: all .3s ease-in;
-}
-
-.slide-up:hover::after{
-  clip-path: inset(0% 0% 0% 0%);
-}
-
-/* = 8. Slide down = */
-.slide-down::after{
-  clip-path: inset(0% 0% 100% 0%);
-  transition: all .3s ease-in;
-}
-
-.slide-down:hover::after{
-  clip-path: inset(0% 0% 0% 0%);
-}
-
-/* = 9. Arrow = */
-.arrow::after{
-  opacity: 0;
-  clip-path: polygon(0% 0%, 0 0, 27% 51%, 0 100%, 0% 100%);
-  transition: all .2s ease-in;
-}
-
-.arrow:hover::after{
-  opacity: 1;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+.connnecter{
+    width: 100px; 
+    height: 30px; 
+    left: 83%; 
+    top: 10px; 
+    position: absolute; 
+    background: linear-gradient(0deg, #E91F23 0%, #E91F23 100%); 
+    border-radius: 100px; 
+    color: white; 
+    border: none
 }

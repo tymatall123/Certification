@@ -16,6 +16,7 @@ import { CategorieComponent } from './Admin-general/categorie/categorie.componen
 import { GestionCoachsComponent } from './Admin-general/gestion-coachs/gestion-coachs.component';
 import { GestionCommantaireComponent } from './Admin-general/gestion-commantaire/gestion-commantaire.component';
 import { ScripteComponent } from './scripte/scripte.component';
+import { DetailVideoComponent } from './detail-video/detail-video.component';
 
 
 
@@ -38,6 +39,8 @@ const routes: Routes = [
   { path: 'coach', component:GestionCoachsComponent },
   { path: 'page-acceuil', component:PageAcceuilComponent }, 
   { path: 'scripte', component:ScripteComponent }, 
+  { path: 'detail-video', component:DetailVideoComponent }, 
+
   
   {path:'',redirectTo: 'connexion' , pathMatch:'full',},
 

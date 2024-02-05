@@ -15,7 +15,7 @@ body {
     line-height: 1.2;
     color: #ffffff;
     margin: 1rem;
-    background: #ffffff;
+    background: #E91F23;
     height: 100vh;
   }
   .container {
@@ -31,15 +31,15 @@ body {
   
   .card-container {
     box-shadow: 0 20px 20px rgba(0,0,0,.08);
-    background-color: #ffffff;
+    background-color: #E91F23;
     white-space: normal;
     margin: 20px;
     -webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
     -moz-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
     transition: all 250ms cubic-bezier(.02, .01, .47, 1);
-    color: #4B4F56;
+    color: #E91F23;
     white-space: normal;
-    background-color: white;
+    background-color: #f4f4f4;
   }
   
   .card-container:hover {
@@ -50,7 +50,7 @@ body {
   
   .ani-border {
     display: inline-block;
-    color: #232a31;
+    color: #E91F23;
     text-decoration: none;
   }
   
@@ -59,7 +59,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: #245900;
+    background: #E91F23;
     transition: width .5s;
   }
   
@@ -210,3 +210,64 @@ body {
   .container{
     margin-top: -60%;
   }
+  .regime{
+    left: 504px;
+    top: 11px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+.contact{
+    left: 379px; 
+    top: 10px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+.propos{
+    left: 248px; 
+    top: 10px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+.service{
+    left: 127px; 
+    top: 10px; 
+    position: absolute; 
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+.acceuil{
+    left: 0px; 
+    top: 10px; 
+    position: absolute; 
+    color: #E91F23; 
+    font-size: 20px; 
+    font-family: Poppins; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.connnecter{
+    width: 100px; 
+    height: 30px; 
+    left: 83%; 
+    top: 10px; 
+    position: absolute; 
+    background: linear-gradient(0deg, #E91F23 0%, #E91F23 100%); 
+    border-radius: 100px; 
+    color: white; 
+    border: none
+}
