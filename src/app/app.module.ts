@@ -25,6 +25,8 @@ import { FooterComponent } from './footer/footer.component';
 import { DetailVideoComponent } from './detail-video/detail-video.component';
 import { ScripteComponent } from './scripte/scripte.component';
 import { FormsModule } from '@angular/forms';
+import { BodySculptComponent } from './body-sculpt/body-sculpt.component';
+import { YogaComponent } from './yoga/yoga.component';
 
 
 
@@ -55,6 +57,8 @@ import { FormsModule } from '@angular/forms';
     DetailVideoComponent,
     AuthentificationComponent,
     ScripteComponent,
+    BodySculptComponent,
+    YogaComponent,
   
   
   ],

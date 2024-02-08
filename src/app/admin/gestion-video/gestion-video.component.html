@@ -57,27 +57,27 @@
           <div class="inner__sidebar_menu">
             <ul>
 		          <li>
-		            <a href="../gestion-video/gestion-video.component.html" class="active">
+		            <a>
 		              <span class="icon"><i class="fab fa-blogger"></i></span>
-		              <span class="list">Dashboard</span>
+		              <span class="list" [routerLink]="['/Acceuil-admin']" routerLinkActive="router-link-active" >Dashboard</span>
 		            </a>
 		          </li>
 		          <li>
-		            <a href="../gestion-regime/gestion-regime.component.html">
+		            <a>
 		              <span class="icon"><i class="fab fa-blogger"></i></span>
-		              <span class="list">Video</span>
+		              <span class="list" [routerLink]="['/gestion-video']" routerLinkActive="router-link-active" >Video</span>
 		            </a>
 		          </li>
 		          <li>
-		            <a href="../gestion-user/gestion-user.component.html">
+		            <a>
 		              <span class="icon"><i class="fab fa-blogger"></i></span>
-		              <span class="list">Regime</span>
+		              <span class="list" [routerLink]="['/gestion-regime']" routerLinkActive="router-link-active" >Regime</span>
 		            </a>
 		          </li>
 		          <li>
 		            <a [routerLink]="['/acceuil-admin']">
 		              <span class="icon"><i class="fab fa-blogger"></i></span>
-		              <span class="list">Utilisateurs</span>
+		              <span class="list" [routerLink]="['/gestion-user']" routerLinkActive="router-link-active" >Utilisateurs</span>
 		            </a>
 		          </li>
 		        </ul>
@@ -92,13 +92,11 @@
             </div>
           </div>
         </div>       
-                         
       </div> 
-      </div>         
-
-      <!-- <div class="row" style="margin-top:8%; width: 50%;">
-        <div class="col-3">
-          <div class="card shadow p-3 mb-5 mt-3" style="width: 18rem; left: 95%;">
+      </div>   
+      <div class="row-mbs" style="margin-left: 20%; margin-top: 3%;">
+        <div class="col-3" style="margin-top: 5%; left: -23%;">
+          <div class="card shadow p-3 mb-3 mt-3" style="width: 18rem; ">
             <div class="card-body text-center">
               <i class="fa-solid fa-circle-play fa-spin-pulse fa-2xs" style="font-size: 55px;"></i>
               <p class="card-text fw-bold"style="font-size:30px;">Video</p>
@@ -106,17 +104,16 @@
             </div>
           </div>
         </div>
-        <div class="col-3 " >
-          <div class="card shadow p-3 mb-5 mt-3 " style="width: 18rem; left: 95%;">
+        <div class="col-3 " style="margin-top: 5%; left: -18%;">
+          <div class="card shadow p-3 mb-3 mt-3 " style="width: 18rem; ">
             <div class="card-body text-center">
-              <i class="fa-solid fa-people-pulling fa-flip" style="font-size: 55px;"></i>
               <p class="card-text fw-bold"style="font-size:30px;">Coach</p>
               <p class="card-text fw-bold" style="font-size:30px;">20</p>
             </div>
           </div>
         </div>
-        <div class="col-3 ">
-          <div class="card shadow p-3 mb-5 mt-3" style="width: 18rem; left: 95%;">
+        <div class="col-3" style="margin-top: 5%; left: 4%;">
+          <div class="card shadow p-3 mb-3 mt-3" style="width: 18rem; margin-left: -20px;">
             <div class="card-body text-center">
               <i class="fa-solid fa-people-pulling fa-flip" style="font-size: 55px;"></i>
               <p class="card-text fw-bold"style="font-size:30px;">Régime</p>
@@ -124,105 +121,61 @@
             </div>
           </div>
         </div>
-      </div> -->
-      <button type="button" class="btn btn-" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="margin-top: 2%;">Ajouter</button>
+      </div>       
 
-      <!-- les cartes pour ajouter les vidéos -->
-      <div class="" id="toto">
-        <button type="button" class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="margin-top: 12%;">Ajouter</button>
+   <div class="row">
+    <figure class="snip1249">
+      <div class="image">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample90.jpg" alt="sample90"/><i class="ion-ios-basketball-outline"></i>
       </div>
-
-     <div class="row" >
-      <div class="card " *ngFor="let item of videos" style="width: 15rem; height: 21rem;" >
-        <video [src]="item.path_video" class="card-img-top " controls style="width: 100%;"></video>
-        <div class="card-body">
-          <h5 class="card-title">yoga</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button type="button" class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="margin-top: 12%;">Modifier</button>
-          <a  class="btn btn-white mt-2 mx-4" style="border: 1px solid red;">Supprimer</a>
-
+      <figcaption>
+        <h3>body-sculpt</h3>
+        <p>How many boards would the Mongols hoard if the Mongol hordes got bored?</p>
+        <div class="price">
+         Supprimer
         </div>
+        <a href="#" class="add-to-cart">Modifier</a>
+      </figcaption>
+    </figure>
+    <figure class="snip1249 hover">
+      <div class="image">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample85.jpg" alt="sample85"/><i class="ion-ios-star-outline"></i>
       </div>
-     </div>
-    
-     
-  <!-- formulaire pour l'ajout -->
-   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Ajouter-vidéo</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <figcaption>
+        <h3>yoga</h3>
+        <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+        <div class="price">
+          Supprimer
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Titre</label>
-              <input type="text" class="form-control" id="titre-name" name="titre" [(ngModel)]="titre">
-            </div>
-            <div class="mb-3">
-              <label for="image" class="col-form-label">Path_video</label>
-               <input type="file" (change)="onFileSelected($event)" accept="video/*"  name="path_video" [(ngModel)]="path_video"/>
-            </div>
-            <div class="mb-3">
-              <label for="number" class="col-form-label">duree</label>
-              <input type="text" class="form-control" id="number" name="duree" [(ngModel)]="duree" >
-            </div>
-            <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Sous_catégorie</label>
-              <input type="text" class="form-control" id="sous_categorie_id- name" name="sous_categorie_id" [(ngModel)]="sous_categorie_id">
-            </div>
-          </form>
+        <a href="#" class="add-to-cart">Modifier</a>
+      </figcaption>
+    </figure>
+    <figure class="snip1249">
+      <div class="image">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample71.jpg" alt="sample71"/><i class="ion-ios-camera-outline"></i>
+      </div>
+      <figcaption>
+        <h3>Winter Hat</h3>
+        <p>Weekends don't count unless spent doing something completely pointless.</p>
+        <div class="price">
+         Supprimer
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn danger" data-bs-dismiss="modal">Annuler</button>
-          <button type="button" class="btn-btn" (click)="sendVideo()">Ajouter</button>
-        </div>
-      </div>
-    </div>
-  </div>
+        <a href="#" class="add-to-cart">Modifier</a>
+      </figcaption>
+    </figure>
 
-<!-- formulaire pour modifier une vidéo -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Ajouter-vidéo</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Titre</label>
-            <input type="text" class="form-control" id="titre-name" name="titre" [(ngModel)]="titre">
-          </div>
-          <div class="mb-3">
-            <label for="image" class="col-form-label">Path_video</label>
-            <input type="image" class="form-control" id="image" name="Path_video" [(ngModel)]="path_video">
-          </div>
-          <div class="mb-3">
-            <label for="number" class="col-form-label">duree</label>
-            <input type="text" class="form-control" id="number" name="duree" [(ngModel)]="duree" >
-          </div>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Sous_catégorie</label>
-            <input type="text" class="form-control" id="Sous_categorie- name" name="Sous_categorie">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn danger" data-bs-dismiss="modal">Annuler</button>
-        <button type="button" class="btn-btn" >Modifier</button>
-      </div>
-    </div>
-  </div>
-</div>
+   </div>
 
 
 
-
-
-
+<script>
+    /* Demo purposes only */
+    $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
+</script>
 
 
 
