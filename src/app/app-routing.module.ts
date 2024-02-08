@@ -43,8 +43,14 @@ const routes: Routes = [
 
   
   {path:'',redirectTo: 'connexion' , pathMatch:'full',},
+ 
+    // { path: '', component: PageAcceuilComponent },
+    // { path: 'coach', component: AcceuilAdminComponent, canActivate: [AuthGuardCoach] },
+    // { path: 'admin', component: AcceuilAdminComponent, canActivate: [AuthGuardAdmin] },
+  ];
+  
 
-];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

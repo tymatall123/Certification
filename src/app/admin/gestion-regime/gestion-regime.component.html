@@ -169,6 +169,73 @@
     <div style="width: 15.62px; height: 25.17px; left: 412.29px; top: 8px; position: absolute; color: #E91F23; font-size: 24px; font-family: Inter; font-weight: 600; word-wrap: break-word">4</div>
 </div>
 
+ 
+  
+        <!-- formulaire pour l'ajout -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Ajouter-Regime</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Titre</label>
+                    <input type="text" class="form-control" id="titre-name" name="titre" [(ngModel)]="titre">
+                  </div>
+                  <div class="mb-3">
+                    <label for="image" class="col-form-label">Path_image</label>
+                     <input type="file" (change)="getFile($event)" accept="images_posts/*"  name="path_image" [(ngModel)]="path_image"/>
+                  </div>
+                  <div class="mb-3">
+                    <label for="number" class="col-form-label">Contenu</label>
+                    <input type="text" class="form-control" id="number" name="duree" [(ngModel)]="contenu" >
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn danger" data-bs-dismiss="modal">Annuler</button>
+                <button type="button" class="btn-btn" (click)="ajoutRegime()" >Ajouter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+     <!-- méthode pour la modification -->
+       <div class="modal fade" id="exampleModal-truc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" *ngFor="let item of regime">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modifier Regime</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Titre</label>
+            <input type="text" class="form-control" id="titre-name" name="titre" {{item.titre}}>
+          </div>
+          <div class="mb-3">
+            <label for="image" class="col-form-label">Path_image</label>
+            <input type="image" class="form-control" id="image" name="Path_image" {{item.path_image}}>
+          </div>
+          <div class="mb-3">
+            <label for="number" class="col-form-label">Contenu</label>
+            <input type="text" class="form-control" id="number" name="contenu" {{item.contenu}} >
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn danger" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" id="exampleModal-truc" class="btn-btn" (click)="modifierRegime(id)">Modifier</button>
+      </div>
+    </div>
+  </div>
+       </div>
     
         
         
